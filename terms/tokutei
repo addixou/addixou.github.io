@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Googleアナリティクスレポート作成ツールならFARO REPORT(ファーロレポート)</title>
+    <meta name="description" content="Googleアナリティクスが導入されているサイトなら、初期・月額費無料のFARO REPORTを利用して誰でも簡単にレポートを自動作成することができます。">
+    <meta name="keywords" content="GA,GoogleAnalytics,無料,レポート,Googleアナリティクス,自動作成,アクセス解析,簡単,カンタン,対策,SEO,SEM,無料,ツール" />
+
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:title" content="Googleアナリティクスレポート作成ツールならFARO REPORT(ファーロレポート)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://faro-report.com" />
+          <meta property="og:image" content="https://faro-report.com/img/jp_slid_item_ogp.png" />
+        <meta property="og:description" content="Googleアナリティクスが導入されているサイトなら、初期・月額費無料のFARO REPORTを利用して誰でも簡単にレポートを自動作成することができます。" />
+
+    <link rel="stylesheet" type="text/css" href="../css/mplus_webfonts.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="../css/ge_mplus_webfonts.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/faqArea.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/admin.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/header.css?1501204336"/>
+    <style type="text/css">
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: none;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://faro-report.com/js/jquery.min.js?1491363818"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/jquery-ui.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/common.css?1501204336"/><link rel="stylesheet" type="text/css" href="https://faro-report.com/css/none.css"/>
+  <script src="https://use.fontawesome.com/30a8f5ef85.js"></script>
+
+  
+    <script type="text/javascript" src="../js/common.js?1491363818"></script>    <script type="text/javascript" src="../js/drop_menu.js?1491363818"></script>  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69071941-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<style>iframe[name="google_conversion_frame"]{position:absolute;top:0;}</style>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 862527725;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/862527725/?guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+<!-- Yahoo Code for your Target List -->
+<script type="text/javascript" language="javascript">
+  /* <![CDATA[ */
+  var yahoo_retargeting_id = '8N1GULFUNK';
+  var yahoo_retargeting_label = '';
+  var yahoo_retargeting_page_type = '';
+  var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+  /* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1637866103133015');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1637866103133015&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1796339250686789'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1796339250686789&ev=PageView&noscript=1"
+  /></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+<!-- Dot metrix -->
+<script type='text/javascript'>
+  (function(doc, dm) {
+    if (!dm.VERSION) {
+      window.dotmetrix = dm;
+
+      dm._queue = [];
+      dm.init = function(api_token, b, c) {
+        dm.API_TOKEN = api_token;
+        function f(dm, fname) { dm[fname] = function() { dm._queue.push([fname].concat([].slice.call(arguments, 0))); } }
+        var functions = 'track identify set'.split(' ');
+        for (var i = 0; i < functions.length; i++) f(dm, functions[i]);
+      };
+
+      s = doc.createElement("script"); s.type = "text/javascript"; s.async = !0; s.src = "https://api.dot-metrix.com/dot-metrix.p.js"; e = doc.getElementsByTagName("script")[0]; e.parentNode.insertBefore(s, e);
+    }
+  })(document, window.dotmetrix || {});
+  dotmetrix.init('8snu_76FLDpqX4zmBm6o');
+</script>
+<!-- /Dot metrix -->
+
+<!-- User Heat Tag -->
+<script type="text/javascript">
+(function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhU1KKOHDh'});
+</script>
+<!-- End User Heat Tag -->
+
+<script language="javascript">
+  !function(w,d,i,u,v,s,t){v=w._vst||(w._vst={fbqueue:[]});if(v.loaded)return;
+    v._userid=i;t=d.createElement('script');t.async=!0;t.src=u;
+    s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(t,s);
+    v.loaded=!0;w.vst=function(){w.fbq?w.fbq.apply(w,arguments):
+      v.fbqueue.push(arguments)}}(window,document,
+    '15fc81d1-2a74-4c3b-9c1e-63c0f8245274','//tgm.vasta.co.jp/tgm.js');
+</script>
+
+    </head>
+
+<body class="page">
+	<script type="text/javascript">
+  $(document).ready(function() {
+  var stickyNavTop = $('.header-box').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+    
+  if (scrollTop > stickyNavTop) { 
+      $('.header-box').addClass('sticky');
+  } else {
+      $('.header-box').removeClass('sticky');
+  }
+  };
+
+  stickyNav();
+
+  $(window).scroll(function() {
+      stickyNav();
+  });
+  });
+</script>
+<header class="header-box">
+    <div class="inner cf">
+      <div class="logo-white">
+        <h1>
+          <a href="../index.html"><img src="../img/logo-white.png?1491363818" alt="FARO REPORT"/></a>        </h1>
+      </div>
+      <div class="logo-black">
+        <h1>
+          <a href="../index.html"><img src="../img/logo-black.png?1491363818" alt="FARO REPORT"/></a>        </h1>
+      </div>
+
+      <div class="unav spno">
+        <p><a href="../users/register">ログイン</a></p>
+        <p><a href="../index.html#flag2">プラン</a></p>
+        <p><a href="question">FAQ</a></p>
+                  <p><a href="http://blog.faro-report.com/" onclick="ga('send', 'event', 'contact', 'click', 'faro_blog');">活用方法</a></p>
+                <p><a href="https://www.addix.co.jp/services/#contact" onclick="ga('send', 'event', 'contact', 'click', 'contact_addix');" class="contact">お問い合わせ</a></p>
+      </div>
+      <div class="input select"><label for="language"></label><select name="data[language]" class="lang spno" id="language">
+<option value="1">EN</option>
+<option value="2" selected="selected">JP</option>
+</select></div>    </div>
+    <div class="menutoggle pcno">
+    <img src="https://faro-report.com/img/ico_menu.png?1491363818" alt="" width="23" height="20"/>    </div>
+
+<div id="wrapper" class="n-menu">
+  <div class="menu inner">
+    <ul class="cf">
+      <li class="pcno"><a href="../users/register">ログイン</a></li>
+      <li class="pcno"><a href="../index.html#flag1">プラン</a></li>
+      <li class="pcno"><a href="question">FAQ</a></li>
+              <li class="pcno"><a href="http://blog.faro-report.com/" onclick="ga('send', 'event', 'contact', 'click', 'faro_blog');">活用方法</a></li>
+            <li class="pcno"><a href="https://www.addix.co.jp/contact/" class="contact">お問い合わせ</a></li>
+      <li class="splang pcno">
+        <div class="input select"><label for="language_mb"></label><select name="data[language_mb]" class="lang" id="language_mb">
+<option value="1">EN</option>
+<option value="2" selected="selected">JP</option>
+</select></div>      </li>
+    </ul>
+  </div>
+</header>
+
+		<section class="inner">
+			<h2>特定商取引法</h2>
+			<p class="txt">｢特定商取引に関する法律」第11条に基づき、以下のとおり表示いたします。</p>
+			<div class="fBox">
+				<section class="cSec">
+					<h3>■販売業者</h3>
+					<p class="txt tal">株式会社ADDIX</p>
+				</section>
+				<section class="cSec">
+					<h3>■運営統括責任者</h3>
+					<p class="txt tal">酒井 大輔</p>
+				</section>
+				<section class="cSec">
+					<h3>■所在地</h3>
+					<p class="txt tal">東京都 港区 北青山3-6-23 青山ダイハンビル10階</p>
+				</section>
+				<section class="cSec">
+					<h3>■電話番号</h3>
+					<p class="txt tal">03-6427-5121</p>
+				</section>
+				<section class="cSec">
+					<h3>■販売価格</h3>
+					<p class="txt tal">月契約：6,000円/月 (税抜)
+					<br>半年契約：5,000円/月 (税抜)
+				　<br>年間契約：4,000円/月 (税抜)</p>
+				</section>
+				<section class="cSec">
+					<h3>■支払いの時期及び方法</h3>
+					<p class="txt tal">クレジットカードによるお支払となります。お申込いただいた日に課金し、各クレジットカード会社の定めるお支払時期に支払っていただきます。</p>
+				</section>
+				<section class="cSec">
+					<h3>■役務の提供の時期</h3>
+					<p class="txt tal">登録後、ただちに利用が可能です。</p>
+				</section>
+				<section class="cSec">
+					<h3>■お支払い方法</h3>
+					<p class="txt tal">クレジットカード決済
+					  <br>Visa, MasterCard, American Express</p>
+				</section>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+	<div class="inner tac">
+		<div class="fnavLp">
+			<p><a href="https://faro-report.com/terms/">利用規約</a></p>
+							<p><a href="tokutei">特定商取引に基づく表示</a></p>
+						<p><a href="https://www.addix.co.jp/">運営会社</a></p>
+			<p><a href="https://www.addix.co.jp/services/#contact" onclick="ga('send', 'event', 'contact', 'click', 'contact_addix');">お問い合わせ</a></p>
+		</div>
+		<p class="copyLp">Copyright©2017 ADDIX.Inc,ALL rights reserved.</p>
+	</div>
+</footer></body>
+</html>

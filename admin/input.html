@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="description" content=""/>
+	<title></title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+	<link rel="stylesheet" href="/admin/static/css/default.css"/>
+	<link rel="stylesheet" href="/admin/static/css/base.css"/>
+	<link rel="stylesheet" href="/admin/static/css/style.css"/>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/admin/static/js/js.cookie.js"></script>
+	<script type="text/javascript" src="/admin/static/js/script.js"></script>
+</head>
+<body data-ui-status="0">
+<div class="area-container">
+	<div class="area-header">
+		<div class="toolbar">
+			<div class="item escape"><a href="" target="_blank"><i class="material-icons">&#xE89E;</i><span class="wrap">表画面を見る</span></a></div>
+			<div class="item user"><a><span class="wrap">ようこそ、<strong>admin</strong> さん</span></a></div>
+			<div class="item logout"><a href=""><i class="material-icons">&#xE8AC;</i><span class="wrap">logout</span></a></div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="" title="区"><i class="material-icons">&#xE55B;</i><span class="wrap">区</span></a></li>
+				<li><a href="" title="路線・駅"><i class="material-icons">&#xE570;</i><span class="wrap">路線・駅</span></a></li>
+				<li><a href="" title="エリア"><i class="material-icons">&#xE55F;</i><span class="wrap">エリア</span></a></li>
+				<li><a href="" title="物件"><i class="material-icons">&#xE7EE;</i><span class="wrap">物件</span></a></li>
+				<li><a href="" title="記事"><i class="material-icons">&#xE02F;</i><span class="wrap">記事</span></a></li>
+				<li><a href="" title="新着情報"><i class="material-icons">&#xE031;</i><span class="wrap">新着情報</span></a></li>
+				<li><a href="" title="お知らせ"><i class="material-icons">&#xE85A;</i><span class="wrap">お知らせ</span></a></li>
+				<li><a href="" title="ブランド"><i class="material-icons">&#xE8D0;</i><span class="wrap">ブランド</span></a></li>
+				<li><a href="" title="バナー"><i class="material-icons">&#xE413;</i><span class="wrap">バナー</span></a></li>
+				<li><a href="" title="サイト情報"><i class="material-icons">&#xE8B8;</i><span class="wrap">サイト情報</span></a></li>
+				<li><a href="" title="アカウント"><i class="material-icons">&#xE8D3;</i><span class="wrap">アカウント</span></a></li>
+			</ul>
+			<div class="toggle"><button id="menu-toggle"></button></div>
+		</div>
+	<!-- area-header --></div>
+
+
+	<div class="area-body">
+		<div class="elem-title">
+			<h1>区追加</h1>
+		<!-- elem-title --></div>
+
+		<div class="section">
+			<div class="elem-alert">
+				<p>文言</p>
+				<ul>
+					<li>エラー内容</li>
+					<li>エラー内容</li>
+				</ul>
+			<!-- elem-alert --></div>
+
+			<div class="elem-form"><form action="">
+				<table>
+					<tbody>
+						<tr>
+							<th>物件名 <i class="crucial">必須</i></th>
+							<td><p><input type="text" name=""/></p></td>
+						</tr>
+						<tr>
+							<th>ブランド <i>任意</i></th>
+							<td><p><select name="" class="full"></select></p></td>
+						</tr>
+						<tr>
+							<th>郵便番号 <i class="crucial">必須</i></th>
+							<td><p><input type="text" name="" size="8"/> <button type="button"><span class="wrap">住所を自動入力</span></button></p></td>
+						</tr>
+						<tr>
+							<th>住所 <i class="crucial">必須</i></th>
+							<td><p class="flex">
+								<input type="text" name=""/>
+								<button type="button"><span class="wrap">緯度経度を検出</span></button>
+							</p></td>
+						</tr>
+						<tr>
+							<th>緯度・経度 <i class="crucial">必須</i></th>
+							<td><p class="flex">
+								<input type="text" name=""/>
+								<input type="text" name=""/>
+								<button type="button"><span class="wrap">地図で確認</span></button>
+							</p></td>
+						</tr>
+						<tr>
+							<th>築年月・築年月備考 <i class="crucial">必須</i></th>
+							<td><p class="flex">
+								<select name=""></select>
+								<select name=""></select>
+								<input type="text" name=""/>
+							</p></td>
+						</tr>
+						<tr>
+							<th>地上階数・地下階数 <i class="crucial">必須</i></th>
+							<td><p>
+								地上 <input type="text" name="" size="4"/> 階
+								&nbsp;
+								地下 <input type="text" name="" size="4"/> 階
+							</p></td>
+						</tr>
+						<tr>
+							<th>専有面積(最小)・専有面積(最大) <i class="crucial">必須</i></th>
+							<td><p>
+								最小 <input type="text" name="" size="4"/> m&sup2;
+								&nbsp;
+								最大 <input type="text" name="" size="4"/> m&sup2;
+							</p></td>
+						</tr>
+						<tr>
+							<th>説明文 <i>任意</i></th>
+							<td>
+								<p><textarea name=""></textarea></p>
+								<p><small>500字以上。</small></p>
+							</td>
+						</tr>
+						<tr>
+							<th>写真 <i>任意</i></th>
+							<td><p><label><input type="file" name="" accept="image/*"/><button type="button"><span class="wrap">画像を選択</span></button><span class="filename"></span></label></p></td>
+						</tr>
+						<tr>
+							<th>オプション <i>任意</i></th>
+							<td><ul class="horizontal">
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション1</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション2</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション3</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション4</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション5</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション6</span></label></li>
+								<li><label><input type="checkbox" name=""/><span class="wrap">オプション7</span></label></li>
+							</ul></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">
+								<button><span class="wrap">登録する</span></button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			<!-- elem-form --></form></div>
+		<!-- section --></div>
+	<!-- area-body --></div>
+<!-- area-container --></div>
+</body>
+</html>

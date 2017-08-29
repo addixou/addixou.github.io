@@ -1,0 +1,2390 @@
+/*******
+/* FARO REPORT index css
+/*
+/* ＜目次＞
+/* 00. Elements base setting - 基本設定
+/* 01. Content general settings - コンテンツ一般設定
+/* 02. Header (navigation) - ヘッダー（ナビゲーション・TOPメニュー）
+/* 03. Slider - スライダー
+/* 04. About-Report sample area - 流れとサンプルレポート
+/* 05. FARO points area - 特徴
+/* 06. Client voice area - 導入事例
+/* 07. Pricing area - 料金プラン
+/* 08. Footer area - フッターエリア
+/*
+*******/
+
+/********************************************
+00. Elements base setting - 基本設定
+*********************************************/
+@charset "UTF-8";
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+/*
+ * Normalization
+ */
+/* line 31, ../sass/lib/_sanitize.scss */
+:root {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: scroll;
+    text-size-adjust: 100%;
+}
+
+/* line 37, ../sass/lib/_sanitize.scss */
+audio:not([controls]) {
+    display: none;
+}
+
+/* line 41, ../sass/lib/_sanitize.scss */
+details {
+    display: block;
+}
+
+/* line 46, ../sass/lib/_sanitize.scss */
+input[type="number"] {
+    width: auto;
+}
+
+/* line 50, ../sass/lib/_sanitize.scss */
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+/* line 53, ../sass/lib/_sanitize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* line 60, ../sass/lib/_sanitize.scss */
+main {
+    display: block;
+}
+
+/* line 64, ../sass/lib/_sanitize.scss */
+summary {
+    display: block;
+}
+
+/* line 68, ../sass/lib/_sanitize.scss */
+pre {
+    overflow: auto;
+}
+
+/* line 72, ../sass/lib/_sanitize.scss */
+progress {
+    display: inline-block;
+}
+
+/* line 76, ../sass/lib/_sanitize.scss */
+small {
+    font-size: 75%;
+}
+
+/* line 80, ../sass/lib/_sanitize.scss */
+template {
+    display: none;
+}
+
+/* line 84, ../sass/lib/_sanitize.scss */
+textarea {
+    overflow: auto;
+}
+
+/* line 88, ../sass/lib/_sanitize.scss */
+[hidden] {
+    display: none;
+}
+
+/* line 92, ../sass/lib/_sanitize.scss */
+[unselectable] {
+    user-select: none;
+}
+
+/*
+ * Universal inheritance
+ */
+/* line 102, ../sass/lib/_sanitize.scss */
+*,
+::before,
+::after {
+/*    box-sizing: inherit;*/
+}
+
+/* line 108, ../sass/lib/_sanitize.scss */
+* {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* line 113, ../sass/lib/_sanitize.scss */
+::before,
+::after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+/*
+ * Opinionated defaults
+ */
+/* line 127, ../sass/lib/_sanitize.scss */
+*,
+::before,
+::after {
+    border-style: solid;
+    border-width: 0;
+}
+
+/* line 136, ../sass/lib/_sanitize.scss */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* line 143, ../sass/lib/_sanitize.scss */
+:root {
+    box-sizing: border-box;
+    cursor: default;
+    font: 10px/1 sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/* line 152, ../sass/lib/_sanitize.scss */
+html {
+    background-color: #FFFFFF;
+    font-size: 62.5%;
+}
+
+/* line 159, ../sass/lib/_sanitize.scss */
+a {
+    text-decoration: none;
+}
+
+/* line 165, ../sass/lib/_sanitize.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* line 176, ../sass/lib/_sanitize.scss */
+button,
+input,
+select,
+textarea {
+    background-color: transparent;
+}
+
+/* line 185, ../sass/lib/_sanitize.scss */
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* line 197, ../sass/lib/_sanitize.scss */
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+    min-height: 1em;
+}
+
+/* line 221, ../sass/lib/_sanitize.scss */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+}
+
+/* line 230, ../sass/lib/_sanitize.scss */
+nav ol,
+nav ul {
+    list-style: none;
+}
+
+/* line 237, ../sass/lib/_sanitize.scss */
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* line 241, ../sass/lib/_sanitize.scss */
+select::-ms-expand {
+    display: none;
+}
+
+/* line 245, ../sass/lib/_sanitize.scss */
+select::-ms-value {
+    color: currentColor;
+}
+
+/* line 252, ../sass/lib/_sanitize.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 259, ../sass/lib/_sanitize.scss */
+textarea {
+    resize: vertical;
+}
+
+/* line 265, ../sass/lib/_sanitize.scss */
+::selection {
+    background-color: #B3D4FC;
+    text-shadow: none;
+}
+
+@media screen {
+    /* line 273, ../sass/lib/_sanitize.scss */
+    [hidden~="screen"] {
+        display: inherit;
+    }
+
+    /* line 277, ../sass/lib/_sanitize.scss */
+    [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+        clip: rect(0 0 0 0) !important;
+        position: absolute !important;
+    }
+}
+
+/*! @extend として利用するものを記述します */
+/* line 2, ../sass/common/_extendable.scss */
+.clearfix, #footer {
+    *zoom: 1;
+}
+
+/* line 4, ../sass/common/_extendable.scss */
+.clearfix:after, #footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* line 12, ../sass/common/_extendable.scss */
+.ease-out {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+/* line 20, ../sass/common/_extendable.scss */
+.over-area {
+    width: 100%;
+}
+
+/* line 37, ../sass/common/_extendable.scss */
+.font-family-meiryo {
+    font-family: Meiryo;
+}
+
+/* line 41, ../sass/common/_extendable.scss */
+.font-size01, .main-area .header, .main-area .about .texts, .plan-area .header, .plan-area .howto-area .step1 .title, .plan-area .howto-area .step1 .button, .plan-area .qa-area .title-area .title, .plan-area .qa-area .button-area, .trait-area .header, .trait-area .dtl-area dt, header .header-box .n-menu ul li a {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (max-width: 567px) {
+    /* line 41, ../sass/common/_extendable.scss */
+    .font-size01, .main-area .header, .main-area .about .texts, .plan-area .header, .plan-area .howto-area .step1 .title, .plan-area .howto-area .step1 .button, .plan-area .qa-area .title-area .title, .plan-area .qa-area .button-area, .trait-area .header, .trait-area .dtl-area dt, header .header-box .n-menu ul li a {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* line 50, ../sass/common/_extendable.scss */
+.font-size02, header {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 567px) {
+    /* line 50, ../sass/common/_extendable.scss */
+    .font-size02, header {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+/* line 59, ../sass/common/_extendable.scss */
+.font-size03, .plan-area .table .page-cell, .plan-area .table .page-cell2, .plan-area .hint-area, .plan-area .qa-area .title-area, #footer .copyright {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 567px) {
+    /* line 59, ../sass/common/_extendable.scss */
+    .font-size03, .plan-area .table .page-cell, .plan-area .table .page-cell2, .plan-area .hint-area, .plan-area .qa-area .title-area, #footer .copyright {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}
+
+/* line 73, ../sass/common/_extendable.scss */
+.font-bold {
+    font-weight: bold;
+}
+
+/* line 77, ../sass/common/_extendable.scss */
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+/* line 80, ../sass/common/_extendable.scss */
+.margin-bottom-4 {
+    margin-bottom: 4%;
+}
+
+/* line 83, ../sass/common/_extendable.scss */
+.margin-bottom-3 {
+    margin-bottom: 3%;
+}
+
+/* line 86, ../sass/common/_extendable.scss */
+.margin-bottom-2 {
+    margin-bottom: 2%;
+}
+
+/* line 89, ../sass/common/_extendable.scss */
+.margin-bottom-1 {
+    margin-bottom: 1%;
+}
+
+/* line 3, ../sass/blocks/_base.scss */
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+/* line 10, ../sass/blocks/_base.scss */
+body {
+    font-family: "mplus", "Lucida Grande", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* line 17, ../sass/blocks/_base.scss */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* line 23, ../sass/blocks/_base.scss */
+a:hover {
+    opacity: 0.8;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	clear: both;
+	margin: 15px auto;
+}
+
+/********************************************
+01. Content general settings - コンテンツ一般設定
+*********************************************/
+section, .inner-area {
+    width: 100%;
+    max-width: 1160px;
+    text-align: center;
+    margin: 0 auto 3% auto;
+}
+
+section h2 {
+    width: 340px;
+    border-bottom: 2px solid #000;
+    margin: 0 auto 3% auto;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+section h2 span {
+    font-size: 36px;
+}
+
+/***スライダー・登録ボタン***/
+.register-btn {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    padding: 1em 0.6em;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #fff;
+
+    backface-visibility: hidden;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+
+.register-btn:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 50% 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.register-btn:hover, .register-btn:focus, .register-btn:active {
+    color: #fff;
+    opacity: 1;
+}
+
+.register-btn:hover:before, .register-btn:focus:before, .register-btn:active:before {
+    transform: scaleY(1);
+}
+
+.basic-btn {
+    background: #fdb812 none repeat scroll 0 0;
+    border: 2px solid #fdb812;
+    text-shadow: 0 0 1px #a6530b;
+}
+
+.basic-btn:before {
+    background: #ffd800 none repeat scroll 0 0;
+}
+
+.basic-btn:hover, .basic-btn:focus, .basic-btn:active {
+    border-color: #ffd800;
+}
+
+.premium-btn {
+    background: #f5821f none repeat scroll 0 0;
+    border: 2px solid #f5821f;
+    text-shadow: 0 0 1px #83430c;
+}
+
+.premium-btn:before {
+    background: #fdb812 none repeat scroll 0 0;
+}
+
+.premium-btn:hover, .premium-btn:focus, .premium-btn:active {
+    border-color: #fdb812;
+}
+
+.consulting-btn {
+    background: #24acbb none repeat scroll 0 0;
+    border: 2px solid #24acbb;
+    text-shadow: 0 0 1px #24acbb;
+}
+
+.consulting-btn:before {
+    background: #32d7e6 none repeat scroll 0 0;
+}
+
+.consulting-btn:hover, .basic-btn:focus, .basic-btn:active {
+    border-color: #32d7e6;
+}
+
+.slide-inner .mention {
+    font-size: 0.6em;
+}
+
+@media (max-width: 567px) {
+    section, .inner-area {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto 5% auto;
+    }
+
+}
+@media (max-width: 320px) {
+	section h2 {
+    	width: 300px;
+    	font-size: 1.3em;
+	}
+}
+
+/********************************************
+02. Header (navigation) - ヘッダー（ナビゲーション・TOPメニュー）
+*********************************************/
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    border-top: 0;
+}
+
+/* line 4, ../sass/blocks/_header.scss */
+header {
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+/* line 10, ../sass/blocks/_header.scss */
+header .header-box {
+    background-color: #58595b;
+    transition: background-color 0.3s ease;
+}
+
+header .sticky {
+//    background-color: #fff;
+//    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.22), 0 2px 1px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 12, ../sass/blocks/_header.scss */
+header .header-box .logo-white,
+header .header-box .logo-black {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+}
+
+/* line 20, ../sass/blocks/_header.scss */
+header .header-box .logo-white img,
+header .header-box .logo-black img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+header .header-box .logo-white {
+    display: inline-block;
+}
+
+header .header-box .logo-black {
+    display: none;
+}
+
+header .sticky .logo-white {
+    display: none;
+}
+
+header .sticky .logo-black {
+    display: inline-block;
+}
+
+/* line 26, ../sass/blocks/_header.scss */
+header .header-box .separator {
+    display: inline-block;
+    height: 35px;
+    width: 2px;
+    background-color: #fff;
+    position: relative;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+header .sticky .separator {
+/*    background-color: #333;*/
+}
+
+@media (max-width: 567px) {
+    /* line 26, ../sass/blocks/_header.scss */
+    header .header-box .separator {
+        display: none;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    /* line 26, ../sass/blocks/_header.scss */
+    header .header-box .separator {
+        display: none;
+    }
+}
+
+/* line 40, ../sass/blocks/_header.scss */
+header .header-box .h-menu {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+@media (max-width: 567px) {
+    /* line 40, ../sass/blocks/_header.scss */
+    header .header-box .h-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    /* line 40, ../sass/blocks/_header.scss */
+    header .header-box .h-menu {
+        display: block;
+    }
+}
+
+/* line 54, ../sass/blocks/_header.scss */
+header .header-box .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 1%;
+    color: #fff;
+    display: table;
+    margin-right: 2%;
+    line-height: 1em;
+    transition: color 0.3s ease;
+}
+
+header .sticky .menu {
+/*    color: #333;*/
+}
+
+@media (max-width: 567px) {
+    /* line 54, ../sass/blocks/_header.scss */
+    header .header-box .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    /* line 54, ../sass/blocks/_header.scss */
+    header .header-box .menu {
+        display: none;
+    }
+}
+
+/* line 69, ../sass/blocks/_header.scss */
+header .header-box .menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8em 0.5em 0.8em 0.5em;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+header .sticky .menu a {
+/*    color: #333;*/
+}
+
+header .sticky .menu a:hover, header .sticky .menu a:focus, header .sticky .menu a:active {
+    color: #f5821f
+}
+
+header .header-box a.premium-register {
+    background-color: #f5821f;
+    padding: 0.8em 1.1em;
+}
+
+header .sticky .menu .premium-register {
+    color: #fff;
+}
+
+header .sticky .menu .premium-register:hover, header .sticky .menu .premium-register:focus, header .sticky .menu .premium-register:active {
+    color: #fff;
+}
+
+/* line 73, ../sass/blocks/_header.scss */
+header .header-box .menu span {
+/*    margin-left: 5px;
+    margin-right: 5px;*/
+    font-size: 1.5em;
+}
+
+/* line 78, ../sass/blocks/_header.scss */
+header .header-box .n-menu {
+    top: -600px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    display: none;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+@media (max-width: 567px) {
+    /* line 78, ../sass/blocks/_header.scss */
+    header .header-box .n-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    /* line 78, ../sass/blocks/_header.scss */
+    header .header-box .n-menu {
+        display: block;
+    }
+}
+
+header .sticky .n-menu {
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.22), 0 2px 1px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 95, ../sass/blocks/_header.scss */
+header .header-box .n-menu ul li {
+    background: rgba(0, 0, 0, 0.76);
+    border-top: 1px solid #fff474;
+    /*3px solid rgba(212, 187, 178, 0.55);*/
+    height: 40px;
+    text-align: left;
+}
+
+header .sticky .n-menu ul li {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+header .sticky .n-menu ul li:hover, header .sticky .n-menu ul li:focus, header .sticky .n-menu ul li:active {
+    background: rgba(243, 243, 243, 0.95);
+}
+
+/* line 100, ../sass/blocks/_header.scss */
+header .header-box .n-menu ul li a {
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+}
+
+header .sticky .n-menu ul li a {
+    color: #333;
+}
+
+/* debug 160704*/
+.gaTagContact {
+    cursor: pointer;
+}
+
+/* line 109, ../sass/blocks/_header.scss */
+header .header-box .n-menu ul li select {
+    margin-top: 3px;
+    height: 33px;
+}
+
+/* line 116, ../sass/blocks/_header.scss */
+header .header-box .lang {
+    width: 60px;
+    margin-left: 10px;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff474;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://faro-report.com/img/select.png) no-repeat 35px center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header .sticky .lang {
+    color: #333;
+    background: url(https://faro-report.com/img/select2.png) no-repeat 35px center;
+}
+
+/* line 128, ../sass/blocks/_header.scss */
+header .header-box .lang option {
+    background: #333;
+}
+
+/* line 135, ../sass/blocks/_header.scss */
+.menu-trigger,
+.menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+/* line 141, ../sass/blocks/_header.scss */
+.menu-trigger {
+    position: relative;
+    width: 34px;
+    height: 30px;
+}
+
+/* line 146, ../sass/blocks/_header.scss */
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFEE6A;
+    /*#fff;*/
+    border-radius: 4px;
+}
+
+/* line 154, ../sass/blocks/_header.scss */
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+/* line 157, ../sass/blocks/_header.scss */
+.menu-trigger span:nth-of-type(2) {
+    top: 13px;
+}
+
+/* line 160, ../sass/blocks/_header.scss */
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+/* line 164, ../sass/blocks/_header.scss */
+.menu-trigger.active {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/* line 168, ../sass/blocks/_header.scss */
+.menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(13px) rotate(-45deg);
+    transform: translateY(13px) rotate(-45deg);
+}
+
+/* line 172, ../sass/blocks/_header.scss */
+.menu-trigger.active span:nth-of-type(2) {
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+}
+
+/* line 176, ../sass/blocks/_header.scss */
+.menu-trigger.active span:nth-of-type(3) {
+    opacity: 0;
+}
+
+/* #global-nav スライドアニメーション */
+/* line 181, ../sass/blocks/_header.scss */
+.n-menu.active {
+    /* #global-nav top + #mobile-head height */
+    -moz-transform: translateY(646px);
+    -moz-transform: translateY(646px);
+    -webkit-transform: translateY(646px);
+    transform: translateY(646px);
+}
+
+/********************************************
+03. Slider - スライダー
+*********************************************/
+
+/***スライダー設定***/
+body .bxslider {
+    background-color: #c8cfd6;
+}
+
+body .bx-wrapper,
+body .bx-wrapper .slide {
+    max-height: 350px;
+}
+
+body .bx-wrapper {
+    margin: 0 auto 45px;
+}
+
+body .bx-wrapper .slide {
+    position: relative;
+    overflow: hidden;
+}
+
+body .bx-wrapper .bx-viewport {
+    left: 0;
+}
+
+/*** slide 1 背景画像 ***/
+body .bx-wrapper #slide1 img {
+    display: inline-block;
+}
+
+/*** slide 2 背景画像 ***/
+body .bx-wrapper #slide2 img {
+    margin-top: -150px;
+    display: inline-block;
+}
+
+/***スライダー - スライドコンテンツ設定***/
+.slide-inner {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3% 5%;
+    margin: 0;
+    min-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 0 0 1px #fff;
+}
+
+.slide-inner .slide-inner-title,
+.slide-inner .slide-inner-merits {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.slide-inner .slide-inner-title {
+    align-items: flex-start;
+}
+
+.slide-inner .slide-inner-merits {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-inner .slide-inner-merits .mention {
+    display: inline-block;
+    text-align: center;
+}
+
+/***スライダー・スライドタイトル***/
+.slide-inner h2 {
+    color: #333;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.slide-inner h2 span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/***スライダー・メリット***/
+.slide-inner .slide-inner-merits .merit-icon {
+    background-color: transparent;
+    color: #1a75bc;
+    display: block;
+    font-size: 50px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slide-inner .slide-inner-merits p span {
+    color: #082233;
+    font-weight: 600;
+}
+
+.slide-inner .basic-btn {
+    margin-top: 1.2em;
+}
+
+/***スライダー・レスポンシブ***/
+@media (min-width: 1200px) {
+    .slide-inner-title, .slide-inner-merits {
+        width: 1160px !important;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    body .bx-wrapper #slide1 img,
+    body .bx-wrapper #slide2 img {
+        margin-top: 0;
+        display: block;
+    }
+
+    .slide-inner {
+        padding: 4% 3%;
+    }
+
+    .slide-inner h2 {
+        font-size: 1em;
+    }
+
+    .slide-inner .slide-inner-merits .merit-icon {
+        font-size: 30px;
+        height: 35px;
+    }
+
+    .slide-inner .slide-inner-merits p {
+        font-size: .8em;
+    }
+
+    .slide-inner .register-btn {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .slide-inner .register-btn i {
+        line-height: 1.1em;
+    }
+}
+
+@media (max-width: 567px) {
+    body .bx-wrapper, body .bx-wrapper .slide {
+        max-height: 250px;
+        height: 250px;
+        min-height: 200px;
+    }
+
+    body .bx-wrapper img {
+        max-width: 1920px;
+        display: block;
+        height: 250px;
+        width: auto;
+    }
+
+    body .bx-wrapper img, body .bx-wrapper #slide2 img {
+        margin-top: 0;
+        display: block;
+    }
+
+    .slide-inner {
+        padding: 0 2%;
+        font-size: 0.8em;
+    }
+
+    .slide-inner h2 {
+        font-size: 1em;
+    }
+
+    .slide-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-inner .slide-inner-title {
+        justify-content: space-around;
+    }
+
+    .slide-inner .slide-inner-merits {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .slide-inner .slide-inner-merits p {
+        margin-top: .8em;
+        font-size: .9em;
+    }
+
+    .slide2 .slide-inner-merits p {
+        width: 280px;
+    }
+
+    .slide2 .slide-inner-merits p:last-child {
+        width: 70%;
+    }
+
+    .slide2 .slide-inner-merits br {
+        content: ""
+    }
+
+    .slide-inner .slide-inner-merits .merit-icon {
+        font-size: 26px;
+        height: 31px;
+        float: left;
+        margin-right: .2em;
+    }
+
+    .slide-inner .register-btn {
+        width: 90%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .slide-inner .register-btn, .slide-inner .register-btn i {
+        line-height: 1.1em;
+    }
+
+    .slide-inner .basic-btn {
+        margin-top: 0.3em;
+    }
+}
+
+@media (max-width: 420px) {
+    body .bx-wrapper, body .bx-wrapper .slide {
+        max-height: 300px;
+        height: 300px;
+        min-height: 250px;
+    }
+
+    body .bx-wrapper img {
+        height: 100%;
+        margin-left: -200px;
+    }
+
+    body .bx-wrapper #slide2 img {
+        margin-left: -250px;
+    }
+
+    body .main-area .about .texts {
+        width: 95%;
+        height: 60px;
+    }
+
+    .slide-inner .slide-inner-merits p {
+        margin-top: 1em;
+        font-size: 1.1em;
+        width: 255px;
+    }
+
+    .slide-inner .slide-inner-merits.merits-en p {
+        margin-top: .8em;
+        font-size: .9em;
+        width: 235px;
+    }
+
+    .slide2 .slide-inner-merits p, .slide2 .slide-inner-merits.merits-en p {
+        width: 310px;
+    }
+
+    .slide2 .slide-inner-merits p:last-child {
+        width: 95%;
+    }
+
+    .slide-inner .register-btn {
+        font-size: 1.3em;
+    }
+
+    .slide-inner .register-btn, .slide-inner .register-btn i {
+        line-height: 1.2em;
+    }
+}
+
+@media (max-width: 320px) {
+    .slide-inner h2 {
+        font-size: .85em;
+    }
+
+    .slide-inner .slide-inner-merits p {
+        margin-top: 1.5em;
+        font-size: .95em;
+        width: 225px;
+    }
+
+    .slide2 .slide-inner-merits p {
+        width: 95%;
+    }
+
+    .slide-inner .register-btn {
+        width: 100%;
+    }
+}
+
+/********************************************
+04. About-Report sample area - 流れとサンプルレポート
+*********************************************/
+/* line 40, ../sass/blocks/_base.scss */
+.main-area .main-visual {
+    margin: 0px auto;
+}
+
+/* line 43, ../sass/blocks/_base.scss */
+.main-area .main-visual .bxslider {
+    width: 100%;
+}
+
+/* line 51, ../sass/blocks/_base.scss */
+.main-area .about .texts {
+    width: 40%;
+    display: inline-block;
+}
+
+/* line 55, ../sass/blocks/_base.scss */
+.main-area .about .texts .row1 {
+    text-align: left;
+}
+
+/* line 58, ../sass/blocks/_base.scss */
+.main-area .about .texts .row2 {
+    text-align: right;
+}
+
+/* line 61, ../sass/blocks/_base.scss */
+.main-area .about .texts img {
+    max-width: 116px;
+    height: auto;
+}
+
+/* line 66, ../sass/blocks/_base.scss */
+.main-area .about .images {
+    margin-top: -10px;
+}
+
+/* line 68, ../sass/blocks/_base.scss */
+.main-area .about .images .round1 {
+    display: inline-block;
+    margin: 1%;
+    position: relative;
+    vertical-align: baseline;
+}
+
+/* line 75, ../sass/blocks/_base.scss */
+.main-area .about .images .round1 {
+    width: 161px;
+    height: auto;
+}
+
+.main-area .about .images .round1 i {
+    color: #fdb812;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    margin-right: -1em;
+    margin-left: 0.5em;
+}
+
+.main-area .about .images .round1 i.PCnone {
+    display: none;
+}
+
+/* line 79, ../sass/blocks/_base.scss */
+.main-area .about .images .round1 .text {
+    display: table-cell;
+}
+
+.main-area .about .images .round1 .text h4 {
+    background-color: #fdb812;
+    text-shadow: 0 0 1px #a6530b;
+    border-radius: 5%;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0.65em;
+    padding: 4px 8px;
+}
+
+.main-area .about .images .round1 .text p {
+    font-size: .65em;
+    text-align: left;
+    padding-left: 0.5em;
+    letter-spacing: -0.05em;
+}
+
+.main-area .about .images .round1 .text p span {
+    display: block;
+    margin-top: 1em;
+}
+
+.report-sample {
+    margin: 15px auto;
+}
+
+.report-sample .header .under-line {
+    background-color: black;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 250px;
+}
+
+.report-sample iframe {
+    margin-top: 1%;
+}
+
+.sample-plan-wrapper {
+    padding: 10px;
+    width: 680px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sample-plan-column-regular, .sample-plan-column-consulting {
+    float: left;
+	width: 310px;
+    margin: 10px;
+}
+
+.sample-plan-content-premium, .sample-plan-content-basic, .sample-plan-content-consulting {
+    width: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	border: 3px solid #f3f3f3;
+}
+
+.sample-plan-content-premium, .sample-plan-content-basic, .sample-plan-content-consulting {
+    margin: 10px 0 10px 0;
+    padding: 20px;
+}
+
+.sample-plan-content-consulting p {
+    margin: 10px;
+}
+
+.sample-plan-content-consulting p.description {
+    text-align: left;
+}
+
+.sample-plan-content-consulting p.price {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.sample-plan-content-consulting {
+    position: relative;
+    overflow: hidden;
+}
+
+.sample-plan-content-consulting .corner-ribbon {
+    width: 100px;
+    background: #24acbb;
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.sample-plan-content-basic {
+	margin-right: 2%;
+}
+.sample-plan-column-regular h3 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+	letter-spacing: .05em;
+}
+.plan-description p {
+	margin-bottom: .5em;
+}
+.plan-description p span {
+	font-size: .8em;
+}
+.sample-plan-wrapper .register-btn {
+	padding: .8em;
+}
+.sample-plan-wrapper .small-btn {
+	font-size: 1.1em;
+}
+
+.plan-details-btn {
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid #4279bc;
+    color: #4279bc;
+    padding: .6em 1.2em;
+    font-weight: 600;
+    letter-spacing: .02em;
+    transition: background-color 0.3s, color 0.3s;
+}
+.plan-details-btn:hover {
+    background-color: rgba(66,121,188,.1);
+}
+
+/***レスポシブ***/
+@media (max-width: 767px) {
+    .sample-plan-wrapper {
+        width: 100%;
+    }
+    .sample-plan-column-regular, .sample-plan-column-consulting {
+        margin: 0;
+		width: 100%;
+	}
+	.sample-plan-content-premium, .sample-plan-content-basic, .sample-plan-content-consulting {
+	width: 100%;
+	float: none;
+	margin: 5px 0;
+	padding: 10px;
+	}
+	.sample-plan-content-basic {
+		margin-right: 0;
+	}
+	.sample-plan-column-regular h3 {
+		margin-bottom: .3em;
+	}
+}
+@media (max-width: 567px) {
+    .main-area .about .images .round1 i {
+        margin-right: 0;
+    }
+
+    .report-sample iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .report-sample iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 380px) {
+    .report-sample iframe {
+        height: 280px;
+    }
+
+    .main-area .about .images .round1,
+    .main-area .about .images .round1 img {
+        width: 80%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-area .about .images .round1 .text {
+        display: block;
+    }
+
+    .main-area .about .images .round1 i.PCnone {
+        display: block;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .main-area .about .images .round1 i.SPnone {
+        display: none;
+    }
+}
+
+/********************************************
+05. FARO points area - 特徴
+********************************************/
+/***特徴 Basic***/
+.trait-area .basic-wrap {
+    background-color: #f3f3f3;
+    padding-top: 3%;
+}
+
+.trait-area .basic-wrap-arrow {
+    width: 100%;
+    height: 0;
+    padding-left: 10%;
+    padding-top: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.trait-area .basic-wrap-arrow:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+    border-left: 580px solid transparent;
+    border-right: 580px solid transparent;
+    border-top: 60px solid #f3f3f3;
+}
+
+.trait-area .dtl-area .item {
+    display: inline-block;
+    height: 110px;
+    width: 49%;
+    margin-bottom: 3%;
+}
+
+.trait-area .dtl-area .item:last-child {
+    margin-bottom: 0;
+}
+
+.trait-area .dtl-area .item-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* line 426, ../sass/blocks/_base.scss */
+.trait-area .dtl-area .item dl {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.trait-area .dtl-area dl {
+    padding-left: 15px;
+    text-align: left;
+    width: 85%;
+    height: 100%;
+}
+
+.trait-area .dtl-area .item-1 dl,
+.trait-area .dtl-area .item-2 dl,
+.trait-area .dtl-area .item-4 dl {
+    padding-left: 0;
+}
+
+.trait-area .dtl-area dt {
+    border: 1px solid #333;
+    border-bottom: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.trait-area .dtl-area dt > i {
+    padding: .3em .7em;
+    margin-right: .5em;
+    background-color: #fdb812;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.trait-area .dtl-area dd {
+    padding: .5em 1em;
+    font-size: 0.8em;
+    border: 1px solid #333;
+    border-top: none;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.trait-area .dtl-area dd span,
+.trait-area .premium-points dd span {
+    font-size: 0.8em;
+    letter-spacing: -0.05em;
+}
+
+/***特徴 Premium***/
+.trait-area .premium-wrap {
+    margin-top: -4%;
+}
+
+.trait-area .premium-wrap h2 {
+    border: none;
+    width: 100%;
+}
+
+.trait-area .premium-wrap h3 {
+    font-size: 18px;
+    margin-bottom: .5em;
+}
+
+.trait-area .premium-points {
+    margin-bottom: 3%;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, #ffd800, #ffd800 5px, #fff 5px, #fff 10px) repeat scroll 0 0;
+}
+
+.trait-area .premium-points-content {
+    background-color: #fff;
+    padding: 2%;
+}
+
+.trait-area .premium-points .item {
+    margin: 0 auto 3% auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.trait-area .premium-points .item img {
+    width: 150px;
+    height: 113px;
+    border: 1px solid #ccc;
+}
+
+.trait-area .premium-points .item dl {
+    text-align: left;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.trait-area .premium-points .item dt {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a75bc;
+    border-bottom: 3px solid #1a75bc;
+}
+
+.trait-area .premium-points .item dt span {
+    display: inline-block;
+    background-color: #1a75bc;
+    color: #fff;
+    width: 1.5em;
+    text-align: center;
+    margin-right: .5em;
+}
+
+.trait-area .premium-points .item dd {
+    font-size: 0.8em;
+}
+
+.trait-area .premium-points p {
+    text-align: left;
+    width: 380px;
+    margin: 0 auto;
+}
+
+/***特徴 ボタン***/
+.trait-area .register-btn {
+    margin: 0 auto 1% auto;
+    display: inline-block;
+    width: 30%;
+}
+
+/***特徴 レスポシブ***/
+@media (min-width: 568px) and (max-width: 930px) {
+    .trait-area .dtl-area .item {
+        height: 125px;
+    }
+
+    .trait-area .dtl-area dl {
+        width: 100%;
+    }
+
+    .trait-area .dtl-area dt {
+        font-size: .9em;
+        letter-spacing: -0.05em;
+    }
+
+    .trait-area .dtl-area dt > i {
+        padding: .5em .8em;
+    }
+
+    .trait-area .premium-wrap {
+        margin-top: 0;
+    }
+
+    .trait-area .register-btn {
+        width: 50%;
+    }
+}
+
+@media (max-width: 567px) {
+    .trait-area .dtl-area .item {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .trait-area .dtl-area dl {
+        padding: 0;
+    }
+
+    .trait-area .dtl-area dt {
+        font-size: 1.3em;
+        letter-spacing: 0;
+    }
+
+    .trait-area .dtl-area dt > i {
+        padding: .3em .5em;
+        margin-right: .3em;
+    }
+
+    .trait-area .basic-wrap-arrow:after {
+        top: 20px;
+        border-left: 280px solid transparent;
+        border-right: 280px solid transparent;
+        border-top: 40px solid #f3f3f3;
+    }
+
+    .trait-area .premium-points {
+        padding: 3%;
+    }
+
+    .trait-area .premium-points-content {
+        padding: 6%;
+    }
+
+    .trait-area .premium-points .item {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .trait-area .premium-points .item img {
+        width: 100%;
+        height: auto !important;
+        margin-bottom: 1em;
+    }
+
+    .trait-area .premium-points .item dl {
+        margin-left: 0;
+        margin-bottom: 2em;
+    }
+
+    .trait-area .premium-points .item dt {
+        margin-bottom: .5em;
+    }
+
+    .trait-area .premium-points .item dt span {
+        font-size: .95em;
+    }
+
+    .trait-area .premium-points p {
+        width: 100%;
+    }
+
+    .trait-area .register-btn {
+        width: 70%;
+    }
+}
+
+@media (max-width: 420px) {
+    .trait-area .dtl-area dt {
+        font-size: .9em;
+    }
+
+    .trait-area .basic-wrap-arrow {
+        padding-left: 20%;
+        padding-top: 20%;
+    }
+
+    .trait-area .premium-wrap h2 {
+        font-size: 1.2em;
+    }
+
+    .trait-area .premium-points .item dt {
+        font-size: 1em;
+    }
+
+    .trait-area .premium-points h3 {
+        font-size: 1.9em;
+        margin-top: 5%;
+    }
+
+    .trait-area .register-btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .trait-area .dtl-area dt {
+        font-size: .85em;
+        letter-spacing: -0.05em;
+    }
+
+    .trait-area .premium-wrap h2 {
+        font-size: 1em;
+        line-height: 3em;
+    }
+
+    .trait-area .register-btn {
+        width: 90%;
+    }
+}
+
+/********************************************
+06. Client voice area - 導入事例
+********************************************/
+.client-area .content > p {
+    margin-bottom: 10px;
+}
+
+.client-voice-banner {
+    background-color: #f3f3f3;
+    width: 80%;
+    margin: 0 auto 3% auto;
+    display: block;
+    border-bottom: 3px solid #f5821e;
+    border-top: 3px solid #f5821e;
+    padding: 20px;
+    overflow: auto;
+}
+
+.client-voice-banner img {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.client-voice-banner .client-content {
+    text-align: left;
+}
+
+.client-voice-banner .client-content h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.client-voice-banner .client-content a {
+    border: 2px solid #f5821e;
+    border-radius: 5px;
+    color: #f5821e;
+    display: inline-block;
+    font-weight: 600;
+    margin: 20px 20px 0 0;
+    padding: 4px 14px;
+    float: right;
+}
+
+.client-voice-banner .client-content a > i {
+    margin-left: 5px;
+}
+
+.client-area .plus {
+    border: none;
+}
+
+/****レスポンシブ****/
+@media (min-width: 568px) and (max-width: 930px) {
+    .client-area {
+        padding: 12% 0 6%;
+    }
+
+    .client-voice-banner {
+        width: 80%;
+        margin-bottom: 6%;
+    }
+
+    .client-voice-banner img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .client-voice-banner .client-content a {
+        float: none;
+        left: 50%;
+        position: relative;
+        top: 15px;
+        transform: translate(-50%, -50%);
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 567px) {
+    .client-area {
+        padding: 12% 0 6%;
+    }
+
+    .client-voice-banner {
+        width: 90%;
+        margin-bottom: 6%;
+    }
+
+    .client-voice-banner img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .client-voice-banner .client-content a {
+        float: none;
+        left: 50%;
+        position: relative;
+        top: 15px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/********************************************
+07. Pricing area - 料金プラン
+********************************************/
+/* line 111, ../sass/blocks/_base.scss */
+.plan-area .header .under-line {
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/* line 121, ../sass/blocks/_base.scss */
+.plan-area .table {
+    margin-top: 1%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* line 126, ../sass/blocks/_base.scss */
+.plan-area .table th, .plan-area .table td, .plan-area .table ts {
+    border: 2px white solid;
+    background-color: #D3D3D3;
+    padding: 1%;
+}
+
+/* line 181, ../sass/blocks/_base.scss */
+.plan-area .table .col1 {
+    background-color: #252525;
+    color: white;
+}
+
+/* line 185, ../sass/blocks/_base.scss */
+.plan-area .table .cell-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* line 189, ../sass/blocks/_base.scss */
+.plan-area .table .color1 {
+    background-color: #ffd800;
+}
+
+/* line 192, ../sass/blocks/_base.scss */
+.plan-area .table .color2 {
+    background-color: #fdb812;
+}
+
+/* line 195, ../sass/blocks/_base.scss */
+.plan-area .table .color3 {
+    background-color: #f5821f;
+}
+
+/* line 198, ../sass/blocks/_base.scss */
+.plan-area .table .box1 {
+    background-color: #ffd800;
+    width: 136px;
+    height: 66px;
+}
+
+/* line 210, ../sass/blocks/_base.scss */
+.plan-area .table .box1 .box-content {
+    width: 136px;
+    height: 66px;
+}
+
+/* line 223, ../sass/blocks/_base.scss */
+.plan-area .table .box2 {
+    background-color: #fdb812;
+    width: 136px;
+    height: 66px;
+}
+
+/* line 235, ../sass/blocks/_base.scss */
+.plan-area .table .box2 .box-content {
+    width: 136px;
+    height: 66px;
+}
+
+/* line 248, ../sass/blocks/_base.scss */
+.plan-area .table .box3 {
+    background-color: #f5821f;
+    width: 424px;
+    height: 66px;
+}
+
+.plan-area .table .box3.consulting {
+    background-color: #24acbb;
+}
+
+/* line 260, ../sass/blocks/_base.scss */
+.plan-area .table .box3 .box-content {
+    width: 424px;
+    height: 66px;
+}
+
+.plan-area td.lite, .plan-area td.basic {
+    max-width: 230px;
+}
+
+.page-cell.basic span.notice {
+    background-color: #fdb812;
+}
+
+@media (max-width: 567px) {
+    .plan-area td.lite, .plan-area td.basic {
+        max-width: none;
+    }
+
+    /* line 126, ../sass/blocks/_base.scss */
+    .plan-area .table th, .plan-area .table td, .plan-area .table ts {
+        display: block;
+    }
+
+    /* line 134, ../sass/blocks/_base.scss */
+    .plan-area .table tr {
+        display: block;
+    }
+
+    /* line 139, ../sass/blocks/_base.scss */
+    .plan-area .table tr:nth-of-type(1) {
+        display: none;
+    }
+
+    /* line 147, ../sass/blocks/_base.scss */
+    .plan-area .table td:before {
+        font-size: 12px;
+        line-height: 1.5;
+        display: block;
+        color: black;
+        text-align: center;
+    }
+
+    /* line 156, ../sass/blocks/_base.scss */
+    .plan-area .table td.lite:before {
+        background-color: #ffd800;
+        content: "Lite";
+    }
+
+    /* line 162, ../sass/blocks/_base.scss */
+    .plan-area .table td.basic:before {
+        background-color: #fdb812;
+        content: " Basic";
+    }
+
+    /* line 168, ../sass/blocks/_base.scss */
+    .plan-area .table td.litebasic:before {
+        background-color: #ffd800;
+        content: "Lite | Basic";
+    }
+
+    /* line 174, ../sass/blocks/_base.scss */
+    .plan-area .table td.premium:before {
+        background-color: #f5821f;
+        content: "Premium";
+    }
+
+    /* line 198, ../sass/blocks/_base.scss */
+    .plan-area .table .box1 {
+        width: 90%;
+        height: 66px;
+    }
+
+    /* line 210, ../sass/blocks/_base.scss */
+    .plan-area .table .box1 .box-content {
+        width: 90%;
+        height: 66px;
+    }
+
+    /* line 223, ../sass/blocks/_base.scss */
+    .plan-area .table .box2 {
+        width: 90%;
+        height: 66px;
+    }
+
+    /* line 235, ../sass/blocks/_base.scss */
+    .plan-area .table .box2 .box-content {
+        width: 90%;
+        height: 66px;
+    }
+
+    /* line 248, ../sass/blocks/_base.scss */
+    .plan-area .table .box3 {
+        width: 90%;
+        height: 66px;
+    }
+
+    /* line 260, ../sass/blocks/_base.scss */
+    .plan-area .table .box3 .box-content {
+        width: 90%;
+        height: 66px;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 930px) {
+    /* line 198, ../sass/blocks/_base.scss */
+    .plan-area .table .box1 {
+        width: 100px;
+        height: 66px;
+    }
+
+    /* line 210, ../sass/blocks/_base.scss */
+    .plan-area .table .box1 .box-content {
+        width: 100px;
+        height: 66px;
+    }
+
+    /* line 223, ../sass/blocks/_base.scss */
+    .plan-area .table .box2 {
+        width: 80px;
+        height: 66px;
+    }
+
+    /* line 235, ../sass/blocks/_base.scss */
+    .plan-area .table .box2 .box-content {
+        width: 100px;
+        height: 66px;
+    }
+
+    /* line 248, ../sass/blocks/_base.scss */
+    .plan-area .table .box3 {
+        width: 200px;
+        height: 66px;
+    }
+
+    /* line 260, ../sass/blocks/_base.scss */
+    .plan-area .table .box3 .box-content {
+        width: 200px;
+        height: 66px;
+    }
+}
+
+/* line 273, ../sass/blocks/_base.scss */
+.plan-area .table .box1, .plan-area .table .box2, .plan-area .table .box3 {
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* line 279, ../sass/blocks/_base.scss */
+.plan-area .table .box1 .box-content, .plan-area .table .box2 .box-content, .plan-area .table .box3 .box-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* line 285, ../sass/blocks/_base.scss */
+.plan-area .table .box-text, .plan-area .table .box-image {
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+}
+
+/* line 291, ../sass/blocks/_base.scss */
+.plan-area .table .page-cell {
+    vertical-align: top;
+    text-align: left;
+}
+
+/* line 296, ../sass/blocks/_base.scss */
+.plan-area .table .page-cell2 {
+    vertical-align: top;
+    text-align: left;
+}
+
+/* line 301, ../sass/blocks/_base.scss */
+.plan-area .table .align-left {
+    text-align: left;
+}
+
+/* line 304, ../sass/blocks/_base.scss */
+.plan-area .table .orange {
+    color: #f5821f;
+}
+
+/* line 308, ../sass/blocks/_base.scss */
+.plan-area .hint-area {
+    width: 100%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+/* line 315, ../sass/blocks/_base.scss */
+.plan-area .howto-area #howto-box1, .plan-area .howto-area #howto-box2, .plan-area .howto-area #howto-box3 {
+    padding: 2%;
+    margin-left: 1px;
+    margin-right: 1px;
+    display: none;
+}
+
+/* line 321, ../sass/blocks/_base.scss */
+.plan-area .howto-area #howto-box1 {
+    background-color: #ffd800;
+}
+
+/* line 324, ../sass/blocks/_base.scss */
+.plan-area .howto-area #howto-box2 {
+    background-color: #fdb812;
+}
+
+/* line 327, ../sass/blocks/_base.scss */
+.plan-area .howto-area #howto-box3 {
+    background-color: #f5821f;
+}
+
+/* line 330, ../sass/blocks/_base.scss */
+.plan-area .howto-area .step1, .plan-area .howto-area .step2 {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* line 340, ../sass/blocks/_base.scss */
+.plan-area .howto-area .step1 .button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 3%;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* line 354, ../sass/blocks/_base.scss */
+.plan-area .howto-area .step2 .image {
+    width: 140px;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+}
+
+/* line 365, ../sass/blocks/_base.scss */
+.plan-area .qa-area {
+    margin-bottom: 6%;
+}
+
+/* line 367, ../sass/blocks/_base.scss */
+.plan-area .qa-area .title-area, .plan-area .qa-area .button-area {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* line 373, ../sass/blocks/_base.scss */
+.plan-area .qa-area .title-area {
+    text-align: left;
+}
+
+/* line 380, ../sass/blocks/_base.scss */
+.plan-area .qa-area .button-area {
+    color: white;
+}
+
+/* line 383, ../sass/blocks/_base.scss */
+.plan-area .qa-area .button-area .button {
+    border-radius: 10px;
+    background-color: #333333;
+    width: 350px;
+    height: 66px;
+    line-height: 66px;
+}
+
+@media (max-width: 567px) {
+    /* line 383, ../sass/blocks/_base.scss */
+    .plan-area .qa-area .button-area .button {
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* line 448, ../sass/blocks/_base.scss */
+#howto-box1 .show {
+    display: block;
+}
+
+/********************************************
+08. Footer area - フッターエリア
+********************************************/
+/* line 4, ../sass/blocks/_footer.scss */
+#footer {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2% 0;
+}
+
+/* line 14, ../sass/blocks/_footer.scss */
+#footer .menu a {
+    color: white;
+}
+
+/* line 17, ../sass/blocks/_footer.scss */
+#footer .menu .sep {
+    display: inline;
+}
+
+/* line 23, ../sass/blocks/_footer.scss */
+#footer .menu .br {
+    display: none;
+}
+
+@media (max-width: 567px) {
+    /* line 17, ../sass/blocks/_footer.scss */
+    #footer .menu .sep {
+        display: none;
+    }
+
+    /* line 23, ../sass/blocks/_footer.scss */
+    #footer .menu .br {
+        display: inline;
+    }
+}
+
+/* line 30, ../sass/blocks/_footer.scss */
+#footer .copyright {
+    margin-top: 1%;
+}
+
+
+
+
+
+.plan-notes {
+  border: 2px solid #4850A8;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #4850A8;
+  background-color: #FAFBFF;
+  font-weight: bold;
+}
+.plan-notes a {
+  text-decoration: underline;
+  color: #4850A8;
+}
+.plan-notes a.is-sp {
+  display: none;
+}
+.plan-notes a:hover {
+  text-decoration: none;
+}
+.new-plan-area {
+  padding-top: 100px;
+  margin-top: -40px;
+}
+.new-plan-area .table th.col1.color-free {
+  background-color: #efefef;
+  color: #333;
+}
+.new-plan-area .table th.col1.color-silver {
+  background-color: #bbb;
+  color: #333;
+}
+.new-plan-area .table th.col1.color-gold {
+  background-color: #D3B292;
+  color: #333;
+}
+.new-plan-area-caption {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: left;
+}
+@media (max-width: 567px) {
+  .new-plan-area {
+    display: none;
+  }
+  .plan-notes a.is-sp {
+    display: inline;
+  }
+  .plan-notes a.is-pc {
+    display: none;
+  }
+}

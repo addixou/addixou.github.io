@@ -1,0 +1,92 @@
+div.ssba, div.ssba a
+{
+font-family: Reenie Beanie;
+font-size: 26px;
+color: #f98c37;
+text-align: right;
+}
+
+.orange  { color: #f6921f; }
+.black   { color: #000000; }
+.ltgrey  { color: #bbbcbe; }
+.dkgrey  { color: #6d6f71; }
+.bggrey  { background-color: #f0f0f0; }
+.dkblue  { color: #02a6e5; }
+.ltblue  { color: #37cafe; }
+
+
+.full-bg-image {
+  background-repeat: no-repeat;
+  background-color: silver;
+}
+
+.content-slider { padding: 60px 0 10px 0; }
+
+.content-slider .cs-element {
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+.content-slider p.cs-element {
+  font-size: 16px !important;
+}
+
+.content-slider-wrapper .cs-small-title {
+  border-bottom: 1px solid #f6921f;
+  padding-bottom: 4px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  color: #fff !important;
+}
+
+button, .button, .button-alt,input[type="submit"], input[type="button"], #submit {
+  background-color: #02a6e5;
+/*	padding: 8px 12px;*/
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+button:hover, .button:hover, .button-alt:hover,input[type="submit"]:hover, input[type="button"]:hover, #submit:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  color: #ffffff;
+  background-color: #37cafe;
+}
+
+.left-arrow, .right-arrow, .ps-left-arrow, .ps-right-arrow, .cs-arrows {
+  background: #f6921f;
+  background: rgba(246,146,31,0.7);
+}
+
+.grower,
+.select-clients a img,
+.services-wrapper.services-icon .services-box a img {
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.grower:hover,
+.services-wrapper.services-icon .services-box a:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.section-full-width a.button:hover,
+#slider-container a.button:hover {
+  _background-color: #6d6f71;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}

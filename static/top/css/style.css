@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#top-head span.menu_left_txt {
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 50px 0;
+  font-weight: normal;
+  display: inline-block;
+}
+
+#top-head span.menu_left_txt strong {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-left: 5px;
+}

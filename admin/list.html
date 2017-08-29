@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="description" content=""/>
+	<title></title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+	<link rel="stylesheet" href="/admin/static/css/default.css"/>
+	<link rel="stylesheet" href="/admin/static/css/base.css"/>
+	<link rel="stylesheet" href="/admin/static/css/style.css"/>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/admin/static/js/js.cookie.js"></script>
+	<script type="text/javascript" src="/admin/static/js/script.js"></script>
+</head>
+<body data-ui-status="0">
+<div class="area-container">
+	<div class="area-header">
+		<div class="toolbar">
+			<div class="item escape"><a href="" target="_blank"><i class="material-icons">&#xE89E;</i><span class="wrap">表画面を見る</span></a></div>
+			<div class="item user"><a><span class="wrap">ようこそ、<strong>admin</strong> さん</span></a></div>
+			<div class="item logout"><a href=""><i class="material-icons">&#xE8AC;</i><span class="wrap">logout</span></a></div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="" title="区"><i class="material-icons">&#xE55B;</i><span class="wrap">区</span></a></li>
+				<li><a href="" title="路線・駅"><i class="material-icons">&#xE570;</i><span class="wrap">路線・駅</span></a></li>
+				<li><a href="" title="エリア"><i class="material-icons">&#xE55F;</i><span class="wrap">エリア</span></a></li>
+				<li><a href="" title="物件"><i class="material-icons">&#xE7EE;</i><span class="wrap">物件</span></a></li>
+				<li><a href="" title="記事"><i class="material-icons">&#xE02F;</i><span class="wrap">記事</span></a></li>
+				<li><a href="" title="新着情報"><i class="material-icons">&#xE031;</i><span class="wrap">新着情報</span></a></li>
+				<li><a href="" title="お知らせ"><i class="material-icons">&#xE85A;</i><span class="wrap">お知らせ</span></a></li>
+				<li><a href="" title="ブランド"><i class="material-icons">&#xE8D0;</i><span class="wrap">ブランド</span></a></li>
+				<li><a href="" title="バナー"><i class="material-icons">&#xE413;</i><span class="wrap">バナー</span></a></li>
+				<li><a href="" title="サイト情報"><i class="material-icons">&#xE8B8;</i><span class="wrap">サイト情報</span></a></li>
+				<li><a href="" title="アカウント"><i class="material-icons">&#xE8D3;</i><span class="wrap">アカウント</span></a></li>
+			</ul>
+			<div class="toggle"><button id="menu-toggle"></button></div>
+		</div>
+	<!-- area-header --></div>
+
+
+	<div class="area-body">
+		<div class="elem-title">
+			<h1>区一覧</h1>
+			<a href="" class="function"><i class="material-icons">&#xE145;</i><span class="wrap">追加する</span></a>
+		<!-- elem-title --></div>
+
+		<div class="elem-tab">
+			<ul>
+				<li><a href="">記事</a></li>
+				<li><a>写真</a></li>
+				<li><a href="">記事カテゴリ</a></li>
+			</ul>
+		<!-- elem-tab --></div>
+
+		<div class="section">
+			<div class="elem-search"><form action="">
+				<div class="field">
+					<label>
+						<span class="wrap">ID</span>
+						<input type="text" name="" size="4"/>
+					</label>
+					<label>
+						<span class="wrap">お問い合わせ番号</span>
+						<input type="text" name="" size="8"/>
+					</label>
+					<label>
+						<span class="wrap">エリア</span>
+						<select name=""><option value="">自由が丘・祐天寺・学芸大学・田園調布</option></select>
+					</label>
+					<label>
+						<span class="wrap">区</span>
+						<select name=""><option value="">東京23区外（武蔵小杉・川崎・横浜など）</option></select>
+					</label>
+					<label>
+						<span class="wrap">物件名</span>
+						<input type="text" name="" size="8"/>
+					</label>
+					<label>
+						<span class="wrap">おすすめ物件</span>
+						<select name=""><option value="">おすすめのみ</option></select>
+					</label>
+					<label>
+						<span class="wrap">状態</span>
+						<select name=""><option value="">非公開中</option></select>
+					</label>
+					<label>
+						<span class="wrap">並び順</span>
+						<select name=""><option value="">名前降順</option></select>
+					</label>
+					<button><span class="wrap">検索</span></button>
+				</div>
+			<!-- elem-search --></form></div>
+
+			<div class="elem-list">
+				<table>
+					<caption>全 318 件中 1 ～ 50 件を表示</caption>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>問い合わせ番号</th>
+							<th>エリア / 区 / 物件名</th>
+							<th>おすすめ</th>
+							<th>登録部屋数</th>
+							<th>状態</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="x-center">0000</td>
+							<td class="x-center">0000</td>
+							<td><small>後楽園・白山・小石川 / 文京区</small><br/><a href="" target="_blank">ブランズタワー文京小日向(BRANZ TOWER)</a></td>
+							<td class="x-center">0</td>
+							<td class="x-center">0</td>
+							<td class="x-center">公開中</td>
+							<td class="x-center"><a href="">編集</a>｜<a href="">部屋</a>｜<a href="">削除</a></td>
+						</tr>
+						<tr>
+							<td class="x-center">0000</td>
+							<td class="x-center">0000</td>
+							<td><small>後楽園・白山・小石川 / 文京区</small><br/><a href="" target="_blank">ブランズタワー文京小日向(BRANZ TOWER)</a></td>
+							<td class="x-center">0</td>
+							<td class="x-center">0</td>
+							<td class="x-center">公開中</td>
+							<td class="x-center"><a href="">編集</a>｜<a href="">部屋</a>｜<a href="">削除</a></td>
+						</tr>
+						<tr>
+							<td class="x-center">0000</td>
+							<td class="x-center">0000</td>
+							<td><small>後楽園・白山・小石川 / 文京区</small><br/><a href="" target="_blank">ブランズタワー文京小日向(BRANZ TOWER)</a></td>
+							<td class="x-center">0</td>
+							<td class="x-center">0</td>
+							<td class="x-center">公開中</td>
+							<td class="x-center"><a href="">編集</a>｜<a href="">部屋</a>｜<a href="">削除</a></td>
+						</tr>
+					</tbody>
+				</table>
+			<!-- elem-list --></div>
+
+			<div class="elem-paginate"><ul>
+				<li><a href=""><span class="wrap"><i class="material-icons">&#xE5DC;</i></span></a></li>
+				<li><a href=""><span class="wrap"><i class="material-icons">&#xE5CB;</i></span></a></li>
+				<li><a href=""><span class="wrap">1</span></a></li>
+				<li><a href=""><span class="wrap">2</span></a></li>
+				<li><a><span class="wrap">3</span></a></li>
+				<li><a href=""><span class="wrap">4</span></a></li>
+				<li><a href=""><span class="wrap">000</span></a></li>
+				<li><a href=""><span class="wrap"><i class="material-icons">&#xE5CC;</i></span></a></li>
+				<li><a href=""><span class="wrap"><i class="material-icons">&#xE5DD;</i></span></a></li>
+			</ul></div>
+		<!-- section --></div>
+	<!-- area-body --></div>
+<!-- area-container --></div>
+</body>
+</html>

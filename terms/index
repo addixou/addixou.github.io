@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Googleアナリティクスレポート作成ツールならFARO REPORT(ファーロレポート)</title>
+    <meta name="description" content="Googleアナリティクスが導入されているサイトなら、初期・月額費無料のFARO REPORTを利用して誰でも簡単にレポートを自動作成することができます。">
+    <meta name="keywords" content="GA,GoogleAnalytics,無料,レポート,Googleアナリティクス,自動作成,アクセス解析,簡単,カンタン,対策,SEO,SEM,無料,ツール" />
+
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:title" content="Googleアナリティクスレポート作成ツールならFARO REPORT(ファーロレポート)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://faro-report.com" />
+          <meta property="og:image" content="https://faro-report.com/img/jp_slid_item_ogp.png" />
+        <meta property="og:description" content="Googleアナリティクスが導入されているサイトなら、初期・月額費無料のFARO REPORTを利用して誰でも簡単にレポートを自動作成することができます。" />
+
+    <link rel="stylesheet" type="text/css" href="../css/mplus_webfonts.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="../css/ge_mplus_webfonts.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/faqArea.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/admin.css?1491363818"/>    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/header.css?1501204336"/>
+    <style type="text/css">
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: none;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://faro-report.com/js/jquery.min.js?1491363818"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/jquery-ui.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://faro-report.com/css/common.css?1501204336"/><link rel="stylesheet" type="text/css" href="https://faro-report.com/css/none.css"/>
+  <script src="https://use.fontawesome.com/30a8f5ef85.js"></script>
+
+  
+    <script type="text/javascript" src="../js/common.js?1491363818"></script>    <script type="text/javascript" src="../js/drop_menu.js?1491363818"></script>  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69071941-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<style>iframe[name="google_conversion_frame"]{position:absolute;top:0;}</style>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 862527725;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/862527725/?guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+<!-- Yahoo Code for your Target List -->
+<script type="text/javascript" language="javascript">
+  /* <![CDATA[ */
+  var yahoo_retargeting_id = '8N1GULFUNK';
+  var yahoo_retargeting_label = '';
+  var yahoo_retargeting_page_type = '';
+  var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+  /* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1637866103133015');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1637866103133015&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1796339250686789'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1796339250686789&ev=PageView&noscript=1"
+  /></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+<!-- Dot metrix -->
+<script type='text/javascript'>
+  (function(doc, dm) {
+    if (!dm.VERSION) {
+      window.dotmetrix = dm;
+
+      dm._queue = [];
+      dm.init = function(api_token, b, c) {
+        dm.API_TOKEN = api_token;
+        function f(dm, fname) { dm[fname] = function() { dm._queue.push([fname].concat([].slice.call(arguments, 0))); } }
+        var functions = 'track identify set'.split(' ');
+        for (var i = 0; i < functions.length; i++) f(dm, functions[i]);
+      };
+
+      s = doc.createElement("script"); s.type = "text/javascript"; s.async = !0; s.src = "https://api.dot-metrix.com/dot-metrix.p.js"; e = doc.getElementsByTagName("script")[0]; e.parentNode.insertBefore(s, e);
+    }
+  })(document, window.dotmetrix || {});
+  dotmetrix.init('8snu_76FLDpqX4zmBm6o');
+</script>
+<!-- /Dot metrix -->
+
+<!-- User Heat Tag -->
+<script type="text/javascript">
+(function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhU1KKOHDh'});
+</script>
+<!-- End User Heat Tag -->
+
+<script language="javascript">
+  !function(w,d,i,u,v,s,t){v=w._vst||(w._vst={fbqueue:[]});if(v.loaded)return;
+    v._userid=i;t=d.createElement('script');t.async=!0;t.src=u;
+    s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(t,s);
+    v.loaded=!0;w.vst=function(){w.fbq?w.fbq.apply(w,arguments):
+      v.fbqueue.push(arguments)}}(window,document,
+    '15fc81d1-2a74-4c3b-9c1e-63c0f8245274','//tgm.vasta.co.jp/tgm.js');
+</script>
+
+    </head>
+
+<body class="page">
+
+	<script type="text/javascript">
+  $(document).ready(function() {
+  var stickyNavTop = $('.header-box').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+    
+  if (scrollTop > stickyNavTop) { 
+      $('.header-box').addClass('sticky');
+  } else {
+      $('.header-box').removeClass('sticky');
+  }
+  };
+
+  stickyNav();
+
+  $(window).scroll(function() {
+      stickyNav();
+  });
+  });
+</script>
+<header class="header-box">
+    <div class="inner cf">
+      <div class="logo-white">
+        <h1>
+          <a href="../index.html"><img src="../img/logo-white.png?1491363818" alt="FARO REPORT"/></a>        </h1>
+      </div>
+      <div class="logo-black">
+        <h1>
+          <a href="../index.html"><img src="../img/logo-black.png?1491363818" alt="FARO REPORT"/></a>        </h1>
+      </div>
+
+      <div class="unav spno">
+        <p><a href="../users/register">ログイン</a></p>
+        <p><a href="../index.html#flag2">プラン</a></p>
+        <p><a href="question">FAQ</a></p>
+                  <p><a href="http://blog.faro-report.com/" onclick="ga('send', 'event', 'contact', 'click', 'faro_blog');">活用方法</a></p>
+                <p><a href="https://www.addix.co.jp/services/#contact" onclick="ga('send', 'event', 'contact', 'click', 'contact_addix');" class="contact">お問い合わせ</a></p>
+      </div>
+      <div class="input select"><label for="language"></label><select name="data[language]" class="lang spno" id="language">
+<option value="1">EN</option>
+<option value="2" selected="selected">JP</option>
+</select></div>    </div>
+    <div class="menutoggle pcno">
+    <img src="https://faro-report.com/img/ico_menu.png?1491363818" alt="" width="23" height="20"/>    </div>
+
+<div id="wrapper" class="n-menu">
+  <div class="menu inner">
+    <ul class="cf">
+      <li class="pcno"><a href="../users/register">ログイン</a></li>
+      <li class="pcno"><a href="../index.html#flag1">プラン</a></li>
+      <li class="pcno"><a href="question">FAQ</a></li>
+              <li class="pcno"><a href="http://blog.faro-report.com/" onclick="ga('send', 'event', 'contact', 'click', 'faro_blog');">活用方法</a></li>
+            <li class="pcno"><a href="https://www.addix.co.jp/contact/" class="contact">お問い合わせ</a></li>
+      <li class="splang pcno">
+        <div class="input select"><label for="language_mb"></label><select name="data[language_mb]" class="lang" id="language_mb">
+<option value="1">EN</option>
+<option value="2" selected="selected">JP</option>
+</select></div>      </li>
+    </ul>
+  </div>
+</header>
+
+	
+		<section class="inner">
+	<h2>FARO REPORT利用規約</h2>
+	<form action="https://faro-report.com/terms/accept">
+		<section class="cSec">
+			<h3>有償版システム利用規約</h3>
+			<p class="txt tal">
+				「FARO REPORT」は、株式会社ADDIX（以下「弊社」といいます。）が提供する、Google アナリティクスを活用したレポーティングサービスです。
+			</p>
+			<p class="txt tal">
+				利用される方は、必ず、事前に本規約をお読み頂き、内容を理解し、同意した上で、利用して下さい。利用された方は、本規約に同意したものとみなします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第1条（定義）</h3>
+			</p>
+			<p class="txt tal">
+				本規約で用いる以下の用語の意味は、以下のとおりとします。
+			</p>
+			<p class="txt tal">
+				(1) 「本サービス」とは、Googleアナリティクスを活用して得られた、利用者が指定するWebサイトのアクセス状況の解析結果を加工し、当該加工したデータを所定の期間、弊社にて保管・提供するサービスをいいます。本サービスの詳細な内容及び仕様は、弊社が別途定めるところによります。
+			</p>
+			<p class="txt tal">
+				(2) 「対象サイト」とは、Google アナリティクスにより各数値を取得しているWebサイトをいい、利用者が別途指定するものとします。
+			</p>
+			<p class="txt tal">
+				(3)「レポート」とは、対象サイトにおけるGoogle アナリティクスの算出数値をベースに、本サービスのシステムによって自動作成されたファイルをいい、弊社が所定の期間、
+			</p>
+			<p class="txt tal">
+				保管及び提供するものです。
+			</p>
+			<p class="txt tal">
+				(4) 「利用者」とは、本サービスの全部又は一部を利用する資格を取得した個人又は法人をいいます。
+			</p></br>
+			<p class="txt tal">
+				<h3>第2条（本規約の適用及び変更）</h3>
+			</p>
+			<p class="txt tal">
+				1）本サービスの利用において弊社がオンラインあるいはその他の方法により随時提示する諸規定、ガイドライン又は特約等（以下「諸規定」といいます）は、本規約の一部を構成するものとします。
+			</p>
+			<p class="txt tal">
+				2）諸規定が本規約（諸規定を除く）と異なっている場合には、諸規定が優先するものとします。
+			</p>
+			<p class="txt tal">
+				3）弊社は、利用者の承諾なしに、本規約を変更することができ、変更後、利用者は、変更後の本規約の適用を受けるものとします。本規約を変更した場合、弊社は、本サービスのウェブサイト上に掲示する等の方法により、利用者への周知を図るものとします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第3条（利用資格）</h3>
+			</p>
+			<p class="txt tal">
+				本サービスの利用資格は、弊社が別途定めるものとします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第4条（利用登録の手続き）</h3>
+			</p>
+			<p class="txt tal">
+				1）本サービスの利用希望者は、本規約に同意した上で、利用登録の申込みを行うものとし、弊社所定の手続きが完了した時点で利用登録を受け、利用者となるものとします。
+			</p>
+			<p class="txt tal">
+				2）未成年の利用希望者は、法定代理人から事前に同意を得た上で弊社所定の手続きに従って、利用登録の申込みを行うものとします。
+			</p>
+			<p class="txt tal">
+				3）弊社は、利用登録の申込みを行った利用希望者が、以下のいずれかに該当する場合には、申込みを承諾しません。
+			</p>
+			<p class="txt tal">
+				　(1) 利用資格を有していない場合
+			</p>
+			<p class="txt tal">
+				　(2) 申込内容に虚偽等があった場合
+			</p>
+			<p class="txt tal">
+				　(3) 過去に弊社が提供するサービスの利用資格を取り消されたことがある場合
+			</p>
+			<p class="txt tal">
+				　(4) その他弊社が利用者として不適切と判断した場合
+			</p></br>
+			<p class="txt tal">
+				<h3>第5条（本サービスの利用）</h3>
+			</p>
+			<p class="txt tal">
+				1）本サービスは、利用資格を有する個人の利用者、又は法人の利用者にあっては当該法人に所属する1名の個人（以下、「法人担当者」といいます）のみが利用できるものとします。
+			</p>
+			<p class="txt tal">
+				2）法人である利用者は、自己の有する資格に基づいて本サービスを利用する法人担当者に対し、本規約に定める利用者の義務を遵守させるものとし、かつ、弊社に対して、法人担当者による当該義務の違反に関し、当該法人担当者と連帯して責任を負うものとします。万一、法人担当者が当該義務に違反した場合、利用者は、自己の費用と責任において、弊社の指示に従い、当該法人担当者による本サービスの利用を中止させ、かつ、再発防止に必要な措置をとるものとします。
+			</p>
+			<p class="txt tal">
+				3）利用者は、自ら又は法人担当者が本サービスを通じて発信する情報、及び自己又は法人担当者による本サービスの利用につき一切の責任を負うものとし、他の利用者、第三者及び弊社に何等の迷惑をかけず、また損害を与えないものとします。
+			</p>
+			<p class="txt tal">
+				4）本サービスの利用に関連して、利用者又は法人担当者が、他の利用者、第三者又は弊社に対して損害を与えた場合、あるいは利用者又は法人担当者と他の利用者又は第三者との間で紛争が生じた場合には、当該利用者は自己の費用と責任でかかる損害を賠償又はかかる紛争を解決するものとし、弊社に何等の迷惑をかけず、また損害を与えないものとします。
+			</p>
+			<p class="txt tal">
+				5）弊社は、ホームページを保有し、Googleアナリティクスの管理権限を有する方（本項で「依頼者」といいます。）から依頼を受けた広告代理店の方（本項で「被依頼者」といいます。）による、当該ホームページに関する本サービスの利用を拒むものではありませんが、被依頼者は、依頼者の了承を得た上で、本サービスの利用登録の申込みを行い、利用するようにして下さい。当社は、被依頼者・依頼者間のトラブル、紛争等には一切関知しません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第6条（利用料金） </h3>
+			</p>
+			<p class="txt tal">
+				1）本サービスの有償版利用者（以下「有償版利用者」といいます。）は、弊社に利用料金を支払うものとします。
+			</p>
+			<p class="txt tal">
+				1ヶ月契約 6,000円 (税別　※税込6,480円)、6ヶ月契約 30,000円 (税別　※税込32,400円)、12ヶ月契約 48,000円 (税別　※税込51,840円)
+			</p>
+			<p class="txt tal">
+				2) 消費税等の税率に変更が生じた場合には、税込料金に変更が適応される。
+			</p>
+			<p class="txt tal">
+				3）契約の途中での入退会の場合も、契約月分の利用料金全額を支払うものとし、日割り等による精算は行わないものとします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第7条（利用料金の支払手続き） </h3>
+			</p>
+			<p class="txt tal">
+				1）有償版利用者の利用料金の支払いは、クレジットカード（弊社が導入している決済システムにおいて対応可能なブランドに限ります。）による月払いに限り、当該クレジットカードの利用規約に基づき、行われるものとします。
+			</p>
+			<p class="txt tal">
+				2) 有償版利用者とクレジットカード会社、金融機関等との間で紛争が発生した場合にも、当社は一切関知しません。
+			</p>
+			<p class="txt tal">
+				3）何らかの理由により利用料金の支払いが当社の指定する支払期日までになされなかった場合、以後の請求を、弊社又は弊社の指定する収納代行会社から行うことがあります。
+			</p></br>
+			<p class="txt tal">
+				<h3>第8条（延滞利息） </h3>
+			</p>
+			<p class="txt tal">
+				有償版利用者が利用料金の支払いに関して当社の指定する支払期日を過ぎてもなお支払いを行わない場合は、有償版利用者は、支払期日の翌日から支払日までの間の当社が定める日数について年14.5%の割合（年365日の日割計算によります。）で計算して得た金額を、延滞利息として、元金に合わせて支払うものとします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第9条（請求書・領収書の省略）</h3>
+			</p>
+			<p class="txt tal">
+				利用料金の請求書及び領収書については、クレジット会社からの請求書・領収書等をもって、これに代えるものとします。なお、これらの書類が発行されない場合であっても、当社は利用料金の請求書・領収書は発行いたしません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第10条（支払済の利用料金の不返還)</h3>
+			</p>
+			<p class="txt tal">
+				利用申込みの取消し、月中の退会その他理由を問わず、当社は既にお支払い頂いた利用料金の返還・精算には一切応じません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第11条（アカウント及びその管理）</h3>
+			</p>
+			<p class="txt tal">
+				1）本サービスのログイン名及びパスワード（以下、ログイン名とパスワードをあわせて「アカウント」といいます）は、利用者が 第4条 の利用申し込み時に登録したログイン名及びパスワードとします。(Googleアカウントと同様のものとなります)
+			</p>
+			<p class="txt tal">
+				2）利用者は、アカウントの管理及び使用について一切の責任を負うものとし、また、アカウントを第三者に貸与又は譲渡しないものとします。利用者のアカウントの使用上の過誤、管理不十分又は第三者による不正使用等に起因して利用者が損害を被った場合にも、弊社は一切責任を負いません。
+			</p>
+			<p class="txt tal">
+				3）利用者は、弊社に届け出たアカウント情報等を忘れた場合は、速やかに弊社に連絡し、弊社の指示に従うものとします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第12条（本サービスの利用の一次的停止・利用登録の抹消）</h3>
+			</p>
+			<p class="txt tal">
+				1) 弊社は、利用者が以下のいずれかに該当すると判断した場合には、利用者への予告なく、当該利用者につき本サービスの利用の一時的停止又は利用登録の抹消をすることができるものとします。
+			</p>
+			<p class="txt tal">
+				　(1) 利用者が第4条第3項各号のいずれかに該当することが判明した場合
+			</p>
+			<p class="txt tal">
+				　(2) 利用者又は法人担当者が第14条に定める禁止行為を行った場合
+			</p>
+			<p class="txt tal">
+				　(3) 利用者又は法人担当者が本規約又は諸規定に違反した場合
+			</p>
+			<p class="txt tal">
+				　(4) その他、利用者として不適当と弊社が判断した場合
+			</p>
+			<p class="txt tal">
+				2) 前項の措置により当該利用者に損害が発生した場合にも、弊社は一切責任を負いません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第13条（利用者へのサポート）</h3>
+			</p>
+			<p class="txt tal">
+				1）弊社は、サービスの運用状況、サービスに関するFAQ等のサポート情報を本サービスのウェブサイト上に掲示します。
+			</p>
+			<p class="txt tal">
+				2）本サービスに関しては、電話でのサポートは行いません。弊社への問い合わせは、本サービスのウェブサイト等を通じて行って下さい。
+			</p></br>
+			<p class="txt tal">
+				<h3>第14条（禁止事項）</h3>
+			</p>
+			<p class="txt tal">
+				利用者は、以下の行為を行わず、また、法人担当者をして行わせないものとします。また、弊社は、利用者が以下の行為を行い、又は行うおそれがあると弊社が判断した場合、適当な措置を講じることができるものとします。
+			</p>
+			<p class="txt tal">
+				　(1) 他の利用者のアカウントを不正に使用する行為
+			</p>
+			<p class="txt tal">
+				　(2) 自らのアカウントを第三者に貸与等する行為
+			</p>
+			<p class="txt tal">
+				　(3) 弊社、他の利用者、その他の第三者又は本サービスに損害を与える行為
+			</p>
+			<p class="txt tal">
+				　(4) 公序良俗に反する行為あるいは公序良俗に反する情報を他の利用者に提供する行為
+			</p>
+			<p class="txt tal">
+				　(5) 本サービスの運営を妨げるような行為
+			</p>
+			<p class="txt tal">
+				　(6) 法令に違反する行為
+			</p>
+			<p class="txt tal">
+				　(7) 前各号に定める行為を助長する行為
+			</p>
+			<p class="txt tal">
+				　(8) 前各号に該当するおそれがあると弊社が判断する行為
+			</p>
+			<p class="txt tal">
+				　(9) その他、弊社が不適切と判断する行為
+			</p></br>
+			<p class="txt tal">
+				<h3>第15条（本サービスにより作成されたレポートについて）</h3>
+			</p>
+			<p class="txt tal">
+				利用者は、本サービスにより作成されたレポートについて、以下の事項を了承するものとします。
+			</p>
+			<p class="txt tal">
+				(1）弊社は、本サービスにより作成されたレポートの正確性等について、保証等をするこ とはできません。本サービスにより作成されたレポートは、ご自身の責任でご利用下さい。
+			</p>
+			<p class="txt tal">
+				(2）弊社は、本サービスによって作成されたレポートを、利用者に断りなく、統計又はサービス向上のために利用することがあります。
+			</p>
+			<p class="txt tal">
+				(3）弊社は、利用者の本サービスの利用により取得した対象サイトに関する情報を、利用者を特定できない形に加工した上で、本サービス（他の利用者の本サービスの利用を含みます。）に利用することがあります。
+			</p></br>
+			<p class="txt tal">
+				<h3>第16条（個人情報）</h3>
+			</p>
+			<p class="txt tal">
+				1）利用者は、申込手続において、弊社の要請に応じ、正確な個人情報を提供するものとします。
+			</p>
+			<p class="txt tal">
+				2) 弊社は「株式会社 ADDIX　個人情報保護方針」に従い、利用者の個人情報を適切に利用・管理します。同方針は、以下のサイトで閲覧できます。http://www.addix.co.jp/privacy/
+			</p>
+			<p class="txt tal">
+				3) 弊社は、利用者から提供を受けた利用者のメールアドレス・電話番号等を利用して、本サービスのプラン、弊社が提供する他のサービスその他の商品・サービスのご紹介、ご提案等をさせて頂きます。
+			</p></br>
+			<p class="txt tal">
+				<h3>第17条（本サービスの中断・打切り）</h3>
+			</p>
+			<p class="txt tal">
+				1) 弊社は、以下の場合には、本サービスの全部又は一部の提供を中断することができるものとします。
+			</p>
+			<p class="txt tal">
+				　(1) 設備の保守・点検を行う場合
+			</p>
+			<p class="txt tal">
+				　(2) 停電、サーバー障害等により、本サービスの提供ができなくなった場合
+			</p>
+			<p class="txt tal">
+				　(3) その他弊社が必要と判断した場合
+			</p>
+			<p class="txt tal">
+				2) 弊社は、前項の規定により本サービスの全部又は一部の提供を中断する場合には、予めその旨を本サービスのウェブサイト等で予告するよう努めます。
+			</p>
+			<p class="txt tal">
+				3) 弊社が本サービスの提供を打ち切る場合には、打切りの1ヶ月前までに、その旨を本サービスのウェブサイト等で予告します。但し、やむを得ない場合は、この限りではないものとします。
+			</p>
+			<p class="txt tal">
+				4) 弊社は、第1項及び前項による中断・打切りに関し、利用者に損害等が発生した場合にも、一切責任を負いません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第18条（利用者の自己責任と弊社の免責）</h3>
+			</p>
+			<p class="txt tal">
+				1) 利用者は、自らの責任で本サービスを利用するものとします。
+			</p>
+			<p class="txt tal">
+				2) 本規約の本条項以外の条項に定めるもののほか、本サービスに関し、何らかの理由により利用者に損害等が発生した場合にも、当社に故意又は重大な過失があるときを除き、弊社は何らの責任を負いません。
+			</p></br>
+			<p class="txt tal">
+				<h3>第19条（準拠法）</h3>
+			</p>
+			<p class="txt tal">
+				本規約に関する準拠法は、日本法とします。
+			</p></br>
+			<p class="txt tal">
+				<h3>第20条（協議および管轄裁判所）</h3>
+			</p>
+			<p class="txt tal">
+				1）本規約の解釈を巡って疑義が生じた場合、弊社は合理的な範囲でその解釈を決定できるものとします。
+			</p>
+			<p class="txt tal">
+				2）本サービスの利用に関して、弊社と利用者との間に、訴訟の必要が生じた場合は、東京地方裁判所を第一審の専属管轄裁判所とします。
+			</p>
+			<p class="txt tal">
+				付則
+			</p>
+			<p class="txt tal">
+				本規約は平成28年4月1日から実施します。
+			</p>
+			<p class="txt tal">
+				最終更新日：2016年6月21日
+			</p>
+		</section>
+		<div class="btnarea">
+							<input type="submit" id="agree" value="利用規約に同意する" class="agree btn">
+				<input type="submit" id="disagree" value="利用規約に同意しない" class="disagree btn">
+					</div>
+	</form>
+</section>
+	</div>
+
+	<footer>
+	<div class="inner tac">
+		<div class="fnavLp">
+			<p><a href="https://faro-report.com/terms/">利用規約</a></p>
+							<p><a href="tokutei">特定商取引に基づく表示</a></p>
+						<p><a href="https://www.addix.co.jp/">運営会社</a></p>
+			<p><a href="https://www.addix.co.jp/services/#contact" onclick="ga('send', 'event', 'contact', 'click', 'contact_addix');">お問い合わせ</a></p>
+		</div>
+		<p class="copyLp">Copyright©2017 ADDIX.Inc,ALL rights reserved.</p>
+	</div>
+</footer><script type="text/javascript">
+	$(document).ready(function(){
+		$('#disagree').click(function(){
+			window.location = 'https://faro-report.com/users/logout';
+			return false;
+		});
+	});
+</script>
+</body>
+</html>
+
